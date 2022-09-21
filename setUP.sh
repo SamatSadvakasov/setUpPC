@@ -12,6 +12,7 @@ cat ~/.ssh/id_ed25519.pub
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 # SET UP AUTO LOCK
+gsettings set org.gnome.desktop.session idle-delay 60
 gsettings set org.gnome.desktop.screensaver lock-enabled true
 gsettings set org.gnome.desktop.screensaver lock-delay 60
 # SET UP PASSWORD
