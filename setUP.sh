@@ -1,5 +1,10 @@
 #!/bin/bash
 # GET SSH key
+if [ $# -eq 0 ]; then
+    echo "No arguments provided"
+    exit 1
+fi
+
 mkdir -p ~/.ssh
 DUMMY=$(ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N '')
 cat ~/.ssh/id_ed25519.pub
