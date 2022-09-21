@@ -1,7 +1,7 @@
 #!/bin/bash
 # GET SSH key
 if [ $# -eq 0 ]; then
-    echo "No arguments provided"
+    echo "No arguments provided. In order set password. For Example ./setUP.sh Passw0rd"
     exit 1
 fi
 
